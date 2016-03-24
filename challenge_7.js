@@ -1,7 +1,12 @@
 'use strict';
 
 function PrimeFinder(n) {
-	this.getPrimeNumber = function() {};
+	var primeNumber = n;
+
+
+	this.getPrimeNumber = function() {
+		return primeNumber;
+	};
 
 } 
 
