@@ -1,7 +1,7 @@
 'use strict';
 
 function PrimeFinder(n) {
-	
+	this.getPrimeNumber = function() {};
 
 
 
@@ -9,8 +9,6 @@ function PrimeFinder(n) {
 
 
 
-	return {
-		getPrimeNumber : getPrimeNumber
-	}
 } 
 
+module.exports = PrimeFinder;
