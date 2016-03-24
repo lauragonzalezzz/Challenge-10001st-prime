@@ -15,11 +15,15 @@ describe('PrimeFinder', function() {
 
 	// GETPRIMENUMBER FUNCTION
 	describe('getPrimeNumber', function() {
-
-
+		
 		it('should be a function', function() {
 			expect(pf.getPrimeNumber).to.be.a('function');
 		});
+
+		it('should not be a function on PrimeFinder', function() {
+			expect(PrimeFinder.getPrimeNumber).to.be.undefined;
+		});
+
 
 
 	});
