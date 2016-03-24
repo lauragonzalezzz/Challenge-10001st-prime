@@ -5,7 +5,7 @@ chai.should();
 
 
 
-//PRIMEFINDER MODULE FUNCTION
+//PRIME FINDER MODULE FUNCTION
 describe('PrimeFinder', function() {
 	var pf = new PrimeFinder();
 
@@ -13,7 +13,7 @@ describe('PrimeFinder', function() {
 		expect(PrimeFinder).to.be.a('function');
 	});
 
-	// GETPRIMENUMBER FUNCTION
+	// GET PRIME NUMBER FUNCTION
 	describe('getPrimeNumber', function() {
 		
 		it('should be a function', function() {
@@ -24,6 +24,9 @@ describe('PrimeFinder', function() {
 			expect(PrimeFinder.getPrimeNumber).to.be.undefined;
 		});
 
+		it('should return a number', function() {
+			expect(pf.getPrimeNumber()).to.be.a('number');
+		});
 
 
 	});
