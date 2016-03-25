@@ -28,7 +28,16 @@ describe('PrimeFinder', function() {
 			expect(pf.getPrimeNumber()).to.be.a('number');
 		});
 
+		it('should return a prime number', function() {
+			var pf2 = new PrimeFinder(2);
+			expect(pf2.getPrimeNumber()).to.equal(3);
+			var pf3 = new PrimeFinder(3);
+			expect(pf3.getPrimeNumber()).to.equal(5);
+			var pf4 = new PrimeFinder(6);
+			expect(pf4.getPrimeNumber()).to.equal(13);
+		});
 
+		
 	});
 
 
